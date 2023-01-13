@@ -46,13 +46,14 @@
                         {{ data.experience[0].title }} @ {{ data.experience[0].company }} ·
                         <a href="mailto:{{ data.about.email }}">{{ data.about.email }}</a>
                     </div>
-                    <p class="lead mb-5">{{ data.about.summary }}</p>
-                    <p class="lead mb-5">To download the latest version of my resume click <a href="https://github.com/argandas/resume/releases/latest/download/Hugo_Arganda_Resume.pdf">here</a>, or download from the GitHub <a href="https://github.com/argandas/resume">repository</a>.</p>
-                    <div class="social-icons">
-                    {% for icon in data.about.icons %}
+                    <p class="lead mb-3">{{ data.about.summary }}</p>
+                    <p class="lead mb-5">To download the latest version of my resume click <a href="https://github.com/argandas/argandas.github.io/releases/latest/download/Hugo_Arganda_Resume.pdf">here</a></p>
+                    <div class="social-icons mb-5">
+                        {% for icon in data.about.icons %}
                         <a class="social-icon" href="{{ icon.href }}"><i class="{{ icon.class }}"></i></a>
-                    {% endfor %}
+                        {% endfor %}
                     </div>
+                    <p class="lead mb-5"><a href="https://github.com/argandas/argandas.github.io">github.com/argandas/argandas.github.io</a></p>
                 </div>
             </section>
             <hr class="m-0" />
