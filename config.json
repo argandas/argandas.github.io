@@ -22,7 +22,7 @@
             },
             {
                 "href": "https://github.com/argandas/resume/releases/latest/download/Hugo_Arganda_Resume.pdf",
-                "class": "fa-solid fa-file-arrow-down"
+                "class": "fa-solid fa-file-pdf"
             }
         ],
         "picture": "assets/img/profile.jpg"
