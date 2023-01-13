@@ -1,0 +1,177 @@
+{
+    "about": {
+        "name": {
+            "full": "Hugo Enrique Arganda Salazar",
+            "first": "Hugo",
+            "last": "Arganda"
+        },
+        "email": "hugo.arganda@gmail.com",
+        "summary": "I am Program Manager experienced in leading multidisciplinary teams (up to 30 members), with more than 11 years of experience in the IT and Automotive industries. Skilled, innovative, and self-learner. Proficient in C, C++, and Python.",
+        "icons": [
+            {
+                "href": "https://www.linkedin.com/in/argandas",
+                "class": "fab fa-linkedin-in"
+            },
+            {
+                "href": "https://github.com/argandas",
+                "class": "fab fa-github"
+            },
+            {
+                "href": "https://twitter.com/argandas",
+                "class": "fab fa-twitter"
+            },
+            {
+                "href": "https://github.com/argandas/resume/releases/latest/download/Hugo_Arganda_Resume.pdf",
+                "class": "fa-solid fa-file-arrow-down"
+            }
+        ],
+        "picture": "assets/img/profile.jpg"
+    },
+    "language": [
+        {
+            "name": "Spanish",
+            "domain": "Native"
+        },
+        {
+            "name": "English",
+            "domain": "C2 Proficient (EFSET 78/100)"
+        }
+    ],
+    "experience": [
+        {
+            "title": "Program Manager",
+            "company": "Luxoft",
+            "location": "Guadalajara, Jal. Mexico",
+            "date": {
+                "start": "May 2022",
+                "end": "Present"
+            },
+            "summary": [
+                "Build intelligent IoT Automotive applications using the AWS IoT services",
+                "Software development in Linux, Docker, Kubernetes, and AWS (Lambda, IAM, GreenGrass, EC2, S3)"
+            ]
+        },
+        {
+            "title": "Senior Project Manager",
+            "company": "Luxoft",
+            "location": "Guadalajara, Jal. Mexico",
+            "date": {
+                "start": "Jun 2021",
+                "end": "May 2022"
+            },
+            "summary": [
+                "Working in close liaison with Automotive OEMs, and Tier 1 clients",
+                "Leading multidisciplinary teams (Requirements, Software, Testing), with headcount of 35+",
+                "Leading multicultural teams (Egypt, India, USA)",
+                "Primary point of contact for Software-related topics",
+                "V-Model methodology",
+                "ASPICE (SWE.1 - SWE.6)"
+            ]
+        },
+        {
+            "company": "Luxoft",
+            "title": "Project Manager",
+            "date": {
+                "start": "Jul 2018",
+                "end": "Jun 2021"
+            },
+            "location": "Guadalajara, Jal. Mexico",
+            "summary": [
+                "Worked in close liaison with Automotive OEMs, Tier 1, and Tier 2 clients",
+                "Led multidisciplinary teams, with headcount of 14+",
+                "Participated in 6 project bids, maintaining a +80% win rate (5 out of 6)",
+                "Implemented full project life cycle for 5 projects",
+                "Maintained project contribution margin above 30% ",
+                "Improved process adherence, reducing lead times by 80%",
+                "Technical interviewer for C, C++, and Python developers"
+            ]
+        },
+        {
+            "company": "Luxoft",
+            "title": "Senior Software Developer",
+            "date": {
+                "start": "Apr 2018",
+                "end": "Jul 2018"
+            },
+            "location": "Guadalajara, Jal. Mexico",
+            "summary": [
+                "Coded in Embedded C for ADAS ECUs (PAM, IPMB)",
+                "Analyzed Functional Safety (ISO 26262) Software Requirements"
+            ]
+        },
+        {
+            "company": "Dextra Technologies",
+            "title": "Embedded Software Developer",
+            "date": {
+                "start": "Nov 2015",
+                "end": "Apr 2018"
+            },
+            "location": "Guadalajara, Jal. Mexico",
+            "summary": [
+                "Developed drivers and applications for telematic devices (GSM, GPS, BLE)",
+                "Coded in Embedded C for STM32 MCUs (ARM)",
+                "Acted as Software integrator (git)"
+            ]
+        },
+        {
+            "company": "Dextra Technologies",
+            "title": "Senior Embedded Tester",
+            "date": {
+                "start": "Jun 2014",
+                "end": "Nov 2015"
+            },
+            "location": "Guadalajara, Jal. Mexico",
+            "summary": [
+                "Created a proprietary testing framework (Python, Go, MongoDB, REST, JSON, Bootstrap)",
+                "Automated automotive protocols testing (CAN, J1939, J1850, KWP2000, ISO-9141)",
+                "Telematics products testing (GSM, GPS)"
+            ]
+        },
+        {
+            "company": "Continental Automotive",
+            "title": "System Testing Trainee",
+            "date": {
+                "start": "May 2011",
+                "end": "Feb 2014"
+            },
+            "location": "Guadalajara, Jal. Mexico",
+            "summary": [
+                "Implemented test automation scripts (Python, NI LabVIEW, and Agilent TestExec)",
+                "Tested Airbag Control Units (ACU) and Seatbelt Reminder (SBR) ECUs"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "school": "Universidad de Guadalajara",
+            "dates": "2017",
+            "degree": "Electronics and Communications Engineering"
+        },
+        {
+            "school": "CETI Colomos",
+            "dates": "2009",
+            "degree": "Technologist in Electronics and Communications"
+        }
+    ],
+    "skills": {
+        "Project Management": [
+            "CMMI, ASPICE, MS Project, Jira, Confluence, Rally, TeamForge",
+            "Project life-cycle, V-Model, Leadership, Scrum (Scrum Master, Product Owner)",
+            "Cost Control, Time management, Effective communication, Risk assessment"
+        ],
+        "Programming Languages": [
+            "C, C++, Python, Go, Javascript, and Bash"
+        ],
+        "Automotive and Embedded systems": [
+            "CAN, UDS, J1939, ISO 15765, RP1210B, DOORS, Vector CANoe, ASPICE, MISRA-C",
+            "ARM, STM32, ST CubeMX, UART, SPI, I2C, BLE, USB HID, Yocto"
+        ],
+        "Other": [
+            "SQL, MongoDB, REST, JSON, HTTP, XML, HTML, Bootstrap, CSS",
+            "Windows, Linux (Ubuntu)",
+            "Docker, Kubernetes (K3S)",
+            "Git, Bitbucket, GitHub",
+            "AWS S3, EC2, IoT, Greengrass, Kinesis"
+        ]
+    }
+}
