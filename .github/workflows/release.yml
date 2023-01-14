@@ -31,12 +31,13 @@ jobs:
           name: build
       - shell: bash
         run: |
-          mv resume.pdf ${{env.GITHUB_REPOSITORY#*/}}.pdf
+          mkdir -p ${{ env.GITHUB_REPOSITORY }} |
+          mv resume.pdf ${{ env.GITHUB_REPOSITORY }}.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: ${{env.GITHUB_REPOSITORY#*/}}.pdf
+          files: ${{ env.GITHUB_REPOSITORY }}.pdf
           draft: false
           prerelease: false
