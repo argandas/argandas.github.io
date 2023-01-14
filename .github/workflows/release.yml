@@ -31,13 +31,13 @@ jobs:
           name: build
       - shell: bash
         run: |
-          mkdir -p ${{ github.repository }} |
-          mv resume.pdf ${{ github.repository }}.pdf
+          mkdir -p ${{ github.repository#*. }} |
+          mv resume.pdf ${{ github.repository#*. }}.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: ${{ github.repository }}.pdf
+          files: ${{ github.repository#*. }}.pdf
           draft: false
           prerelease: false
