@@ -3271,13 +3271,23 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  color: #bd5d38;
-  border-color: #bd5d38;
+  color: #495057;
+  border-color: #495057;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 2rem;
 }
+
 .btn-outline-primary:hover {
-  color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  color: #FFFFFF;
+  background-color: #1e82bd;
+  border-color: #1e82bd;
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.5);
@@ -11361,8 +11371,8 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 14rem;
+    max-height: 14rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {

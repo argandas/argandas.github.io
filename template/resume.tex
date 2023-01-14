@@ -15,12 +15,12 @@
 %----------------------------------------------------------------------------------------
 
 \customheader
-    {\VAR{ data.about.name.full }}
-    {\VAR{ data.experience[0].title } @ \VAR{ data.experience[0].company }}
-    {\href{mailto:\VAR{data.about.email }}{\VAR{ data.about.email }}}
-    {\VAR{ data.about.phone }}
-    {\href{\VAR{ data.about.social.linkedin.href }}{\VAR{ data.about.social.linkedin.href }}}
-    {\VAR{ data.about.location }}
+    {\VAR{ data.basics.name }}
+    {\VAR{ data.work[0].position } @ \VAR{ data.work[0].name }}
+    {\href{mailto:\VAR{data.basics.email }}{\VAR{ data.basics.email }}}
+    {\href{\VAR{ data.basics.profiles.whatsapp.url }}{\VAR{ data.basics.phone }}}
+    {\href{\VAR{ data.basics.profiles.linkedin.url }}{\VAR{ data.basics.profiles.linkedin.url }}}
+    {\VAR{ data.basics.location.city }, \VAR{ data.basics.location.countryCode }}
 
 %----------------------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@
 
 \summary
 {Summary}
-    {\VAR{ data.about.summary }}
+    {\VAR{ data.basics.summary }}
 
 %----------------------------------------------------------------------------------------
 
@@ -40,14 +40,14 @@
 
 \section{Work Experience}
 
-\BLOCK{ for exp_item in data.experience }
+\BLOCK{ for exp_item in data.work }
 
 \job
-    {\VAR{ exp_item.company }}
-    {\VAR{ exp_item.title }}
-    {\VAR{ exp_item.date.start }}
-    {\VAR{ exp_item.date.end }}
-    {\VAR{ exp_item.location }}
+    {\VAR{ exp_item.name }}
+    {\VAR{ exp_item.position }}
+    {\VAR{ exp_item.startDate }}
+    {\VAR{ exp_item.endDate }}
+    {\VAR{ exp_item.location.address }}
     {
     \begin{itemize-bullets}
 \BLOCK{ for exp_summary_item in exp_item.summary }
@@ -86,11 +86,11 @@
 
 \section{Languages}
 
-\BLOCK{ for lang_item in data.language }
+\BLOCK{ for lang_item in data.languages }
 
 \langitem
-    {\VAR{ lang_item.name }}
-    {\VAR{ lang_item.level }}
+    {\VAR{ lang_item.language }}
+    {\VAR{ lang_item.fluency }}
 
 \BLOCK{ endfor }
 
@@ -105,9 +105,9 @@
 \BLOCK{ for edu_item in data.education }
 
 \eduitem
-    {\VAR{ edu_item.date }}
+    {\VAR{ edu_item.endDate }}
     {\VAR{ edu_item.degree }}
-    {\VAR{ edu_item.school }}
+    {\VAR{ edu_item.institution }}
 
 \BLOCK{ endfor }
 

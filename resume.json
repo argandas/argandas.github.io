@@ -1,100 +1,79 @@
 {
-    "about": {
-        "name": {
-            "full": "Hugo Enrique Arganda Salazar",
-            "first": "Hugo",
-            "last": "Arganda"
-        },
+    "basics": {
+        "name": "Hugo Arganda",
         "email": "hugo.arganda@gmail.com",
-        "location": "Guadalajara, Jal. Mexico",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "Guadalajara",
+            "countryCode": "MX",
+            "region": "Jalisco"
+        },
         "phone": "+52 1 332-343-6739",
         "summary": "Program Manager experienced in leading multidisciplinary teams (up to 30 members), with more than 11 years of experience in the IT and Automotive industries. Skilled, innovative, and self-learner. Proficient in C, C++, and Python.",
-        "social": {
+        "profiles": {
             "linkedin": {
-                "href": "https://www.linkedin.com/in/argandas",
+                "url": "https://www.linkedin.com/in/argandas",
                 "class": "fab fa-linkedin-in"
             },
+            "whatsapp": {
+                "url": "https://wa.me/5213323436739",
+                "class": "fa-brands fa-whatsapp"
+            },
             "github": {
-                "href": "https://github.com/argandas",
+                "url": "https://github.com/argandas",
                 "class": "fab fa-github"
             },
             "twitter": {
-                "href": "https://twitter.com/argandas",
+                "url": "https://twitter.com/argandas",
                 "class": "fab fa-twitter"
-            },
-            "pdf_download": {
-                "href": "https://github.com/argandas/argandas.github.io/releases/latest/download/resume.pdf",
-                "class": "fa-solid fa-file-pdf"
             }
-        },
-        "picture": "assets/img/profile.jpg"
+        }
     },
-    "language": [
+    "languages": [
         {
-            "name": "Spanish",
-            "level": "Native"
+            "language": "Spanish",
+            "fluency": "Native"
         },
         {
-            "name": "English",
-            "level": "C2 Proficient (EFSET 78/100)"
+            "language": "English",
+            "fluency": "C2 Proficient (EFSET 78/100)"
         }
     ],
-    "experience": [
+    "work": [
         {
-            "title": "Program Manager",
-            "company": "Luxoft",
+            "position": "Program Manager",
+            "name": "Luxoft",
             "location": "Guadalajara, Jal. Mexico",
-            "date": {
-                "start": "May 2022",
-                "end": "Present"
-            },
+            "startDate": "2022-05-01",
+            "endDate": "Present",
             "summary": [
                 "Build intelligent IoT Automotive applications using the AWS IoT services",
                 "Software development in Linux, Docker, Kubernetes, and AWS (Lambda, IAM, GreenGrass, EC2, S3)"
             ]
         },
         {
-            "title": "Senior Project Manager",
-            "company": "Luxoft",
+            "position": "Project Manager",
+            "name": "Luxoft",
             "location": "Guadalajara, Jal. Mexico",
-            "date": {
-                "start": "Jun 2021",
-                "end": "May 2022"
-            },
-            "summary": [
-                "Working in close liaison with Automotive OEMs, and Tier 1 clients",
-                "Leading multidisciplinary teams (Requirements, Software, Testing), with headcount of 35+",
-                "Leading multicultural teams (Egypt, India, USA)",
-                "Primary point of contact for Software-related topics",
-                "V-Model methodology",
-                "ASPICE (SWE.1 - SWE.6)"
-            ]
-        },
-        {
-            "company": "Luxoft",
-            "title": "Project Manager",
-            "date": {
-                "start": "Jul 2018",
-                "end": "Jun 2021"
-            },
-            "location": "Guadalajara, Jal. Mexico",
+            "startDate": "2018-07-31",
+            "endDate": "2022-05-31",
             "summary": [
                 "Worked in close liaison with Automotive OEMs, Tier 1, and Tier 2 clients",
-                "Led multidisciplinary teams, with headcount of 14+",
+                "Software development in C++ and JavaScript for automotive applications",
+                "Led multidisciplinary teams, with a maximum headcount of 14",
                 "Participated in 6 project bids, maintaining a +80 pct. win rate (5 out of 6)",
                 "Implemented full project life cycle for 5 projects",
-                "Maintained project contribution margin above 30 pct. ",
+                "Maintained project contribution margin above 30 pct.",
                 "Improved process adherence, reducing lead times by 80 pct.",
                 "Technical interviewer for C, C++, and Python developers"
             ]
         },
         {
-            "company": "Luxoft",
-            "title": "Senior Software Developer",
-            "date": {
-                "start": "Apr 2018",
-                "end": "Jul 2018"
-            },
+            "name": "Luxoft",
+            "position": "Senior Software Developer",
+            "startDate": "2018-04-30",
+            "endDate": "2018-07-31",
             "location": "Guadalajara, Jal. Mexico",
             "summary": [
                 "Coded in Embedded C for ADAS ECUs (PAM, IPMB)",
@@ -102,12 +81,10 @@
             ]
         },
         {
-            "company": "Dextra Technologies",
-            "title": "Embedded Software Developer",
-            "date": {
-                "start": "Nov 2015",
-                "end": "Apr 2018"
-            },
+            "name": "Dextra Technologies",
+            "position": "Embedded Software Developer",
+            "startDate": "2015-12-31",
+            "endDate": "2018-03-31",
             "location": "Guadalajara, Jal. Mexico",
             "summary": [
                 "Developed drivers and applications for telematic devices (GSM, GPS, BLE)",
@@ -116,12 +93,10 @@
             ]
         },
         {
-            "company": "Dextra Technologies",
-            "title": "Senior Embedded Tester",
-            "date": {
-                "start": "Jun 2014",
-                "end": "Nov 2015"
-            },
+            "name": "Dextra Technologies",
+            "position": "Senior Embedded Tester",
+            "startDate": "2014-06-30",
+            "endDate": "2015-11-30",
             "location": "Guadalajara, Jal. Mexico",
             "summary": [
                 "Created a proprietary testing framework (Python, Go, MongoDB, REST, JSON, Bootstrap)",
@@ -130,12 +105,10 @@
             ]
         },
         {
-            "company": "Continental Automotive",
-            "title": "System Testing Trainee",
-            "date": {
-                "start": "May 2011",
-                "end": "Feb 2014"
-            },
+            "name": "Continental Automotive",
+            "position": "System Testing Trainee",
+            "startDate": "2011-05-31",
+            "endDate": "2014-02-28",
             "location": "Guadalajara, Jal. Mexico",
             "summary": [
                 "Implemented test automation scripts (Python, NI LabVIEW, and Agilent TestExec)",
@@ -145,14 +118,20 @@
     ],
     "education": [
         {
-            "school": "Universidad de Guadalajara",
-            "date": "2017",
-            "degree": "Electronics and Communications Engineering"
+            "institution": "Universidad de Guadalajara",
+            "degree": "Electronics and Communications Engineering",
+            "startDate": "2010-12-31",
+            "endDate": "2017-12-31",
+            "score": "",
+            "courses": []
         },
         {
-            "school": "CETI Colomos",
-            "date": "2009",
-            "degree": "Technologist in Electronics and Communications"
+            "institution": "Centro de Enseñanza Técnica Industrial",
+            "degree": "Technologist in Electronics and Communications",
+            "startDate": "2005-12-31",
+            "endDate": "2009-12-31",
+            "score": "",
+            "courses": []
         }
     ],
     "skills": {
@@ -175,5 +154,8 @@
             "Git, Bitbucket, GitHub",
             "AWS S3, EC2, IoT, Greengrass, Kinesis"
         ]
+    },
+    "artifacts": {
+        "pdf": "https://github.com/argandas/argandas.github.io/releases/latest/download/resume.pdf"
     }
 }

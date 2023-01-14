@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Resume - {{ data.about.name.full }}</title>
+        <title>Resume - {{ data.basics.name }}</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -19,8 +19,8 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Resume - {{ data.about.name.full }}</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ data.about.picture }}" alt="..." /></span>
+                <span class="d-block d-lg-none">Resume - {{ data.basics.name }}</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ data.artifacts.gravatar }}" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -38,22 +38,23 @@
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        {{ data.about.name.first }}
-                        <span class="text-primary">{{ data.about.name.last }}</span>
+                    <h1 class="mb-1">
+                        {{ data.basics.name }}
                     </h1>
                     <div class="subheading mb-5">
-                        {{ data.experience[0].title }} @ {{ data.experience[0].company }} ·
-                        <a href="mailto:{{ data.about.email }}">{{ data.about.email }}</a>
+                        {{ data.work[0].position }} @ {{ data.work[0].name }} ·
+                        <a href="mailto:{{ data.basics.email }}">{{ data.basics.email }}</a>
                     </div>
-                    <p class="lead mb-3">{{ data.about.summary }}</p>
-                    <p class="lead mb-5">To download the latest version of my resume click <a href="https://github.com/argandas/argandas.github.io/releases/latest/download/resume.pdf">here</a></p>
-                    <div class="social-icons mb-5">
-                        {% for key, value in data.about.social.items() %}
-                        <a class="social-icon" href="{{ value.href }}"><i class="{{ value.class }}"></i></a>
+                    <p class="lead mb-3">{{ data.basics.summary }}</p>
+                    <div class="social-icons mb-3">
+                        {% for network, profile in data.basics.profiles.items() %}
+                        <a class="social-icon" href="{{ profile.url }}"><i class="{{ profile.class }}"></i></a>
                         {% endfor %}
+                        <a href="{{ data.artifacts.pdf }}" class="btn btn-outline-primary mb-5" role="button" aria-disabled="true">
+                            <i class="fa-solid fa-download" aria-hidden="true"></i>&nbsp; Download (.pdf)
+                        </a>
                     </div>
-                    <p class="lead mb-5">Source code: <a href="https://github.com/argandas/argandas.github.io">argandas.github.io</a></p>
+                    <p class="lead">Source code: <a href="https://github.com/argandas/argandas.github.io">argandas.github.io</a></p>
                 </div>
             </section>
             <hr class="m-0" />
@@ -61,18 +62,18 @@
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
-                    {% for exp_item in data.experience %}
+                    {% for exp_item in data.work %}
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">{{ exp_item.title }}</h3>
-                            <div class="subheading mb-3">{{ exp_item.company }} @ {{ exp_item.location }}</div>
-                            <p>
-                            {% for exp_summary_item in exp_item.summary %}
-                            {{ exp_summary_item }}<br />
-                            {% endfor %}
-                            </p>
+                            <h3 class="mb-0">{{ exp_item.position }}</h3>
+                            <div class="subheading mb-2">{{ exp_item.name }} @ {{ exp_item.location.address }}</div>
+                            <ul class="fa-ul mb-3">
+                                {% for exp_summary_item in exp_item.summary %}
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>{{ exp_summary_item }}</li>
+                                {% endfor %}
+                            </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">{{ exp_item.date.start }} - {{ exp_item.date.end }}</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{ exp_item.startDate }} - {{ exp_item.endDate }}</span></div>
                     </div>
                     {% endfor %}
                 </div>
@@ -86,9 +87,9 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">{{ edu_item.degree }}</h3>
-                            <div class="subheading mb-3">{{ edu_item.school }}</div>
+                            <div class="subheading mb-3">{{ edu_item.institution }}</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">{{ edu_item.date }}</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{ edu_item.endDate }}</span></div>
                     </div>
                     {% endfor %}
                 </div>
@@ -113,11 +114,11 @@
             <section class="resume-section" id="languages">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Languages</h2>
-                    {% for lang_item in data.language %}
+                    {% for lang_item in data.languages %}
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">{{ lang_item.name }}</h3>
-                            <div class="subheading mb-3">{{ lang_item.level }}</div>
+                            <h3 class="mb-0">{{ lang_item.language }}</h3>
+                            <div class="subheading mb-3">{{ lang_item.fluency }}</div>
                         </div>
                     </div>
                     {% endfor %}
