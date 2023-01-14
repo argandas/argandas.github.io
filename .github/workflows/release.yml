@@ -17,7 +17,7 @@ jobs:
         run: make
       - name: Set env variables
         run: |
-          sudo apt-get install -y jq
+          apt-get install -y jq
           FILE_NAME=$(jq -r '.basics.name' resume.json | sed -r 's/ /_/g')
           echo "FILE_NAME=$FILE_NAME" >> $GITHUB_ENV
       - shell: bash
