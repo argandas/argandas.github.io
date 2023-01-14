@@ -29,6 +29,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: ${{ env.FILE_NAME }}
+          files: ${{ env.FILE_NAME }} .build/resume.pdf
           draft: false
           prerelease: false
