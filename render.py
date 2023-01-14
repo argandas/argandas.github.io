@@ -6,6 +6,10 @@ import os
 
 input_data = dict()
 
+std_jinja_env = jinja2.Environment(
+    loader = jinja2.FileSystemLoader(os.path.abspath('.'))
+)
+
 latex_jinja_env = jinja2.Environment(
 	block_start_string = '\BLOCK{',
 	block_end_string = '}',
@@ -20,32 +24,30 @@ latex_jinja_env = jinja2.Environment(
 	loader = jinja2.FileSystemLoader(os.path.abspath('.'))
 )
 
-def load_config():
+def load_config(config_file):
     global input_data
-    with open("config.json", "r") as f:
+    with open(config_file, "r") as f:
         input_data = json.load(f)
 
 
-def render_index():
-    with open('./template/index.html', "r") as f:
-        tmpl = Template(f.read()).render(data=input_data)
-        f.close()
-        with open("index.html", "w+") as fh:
-            fh.write(tmpl)
-            fh.close()
+def render_file(template, dst):
+    tmpl = std_jinja_env.get_template(template)
+    with open(dst, "w+") as fh:
+        fh.write(tmpl.render(data=input_data))
+        fh.close()
 
 
-def render_latex():
-    tmpl = latex_jinja_env.get_template('./template/resume.tex')
-    with open("resume.tex", "w+") as fh:
+def render_latex(template, dst):
+    tmpl = latex_jinja_env.get_template(template)
+    with open(dst, "w+") as fh:
         fh.write(tmpl.render(data=input_data))
         fh.close()
 
 
 def main():
-    load_config()
-    render_index()
-    render_latex()
+    load_config('config.json')
+    render_file('./template/index.html', './index.html')
+    render_latex('./template/resume.tex', './resume.tex')
 
 
 if __name__ == "__main__":
