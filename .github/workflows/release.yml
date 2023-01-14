@@ -7,35 +7,21 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     container: texlive/texlive:latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
       - name: Compile LaTex to PDF
-        run: make 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: build
-          path: .build
-  release:
-    needs: build
-    runs-on: ubuntu-latest
-    if: ${{ success() }}
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: build
+        run: make
       - name: Set env variables
         run: |
           FILE_NAME=$(jq -r '.basics.name' resume.json)
           echo "FILE_NAME=$FILE_NAME" >> $GITHUB_ENV
       - shell: bash
         run: |
-          mv resume.pdf ${{ env.FILE_NAME }}.pdf
+          cp .build/resume.pdf ${{ env.FILE_NAME }}.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         env:
