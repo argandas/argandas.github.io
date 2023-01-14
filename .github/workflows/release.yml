@@ -29,11 +29,19 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
+      - name: Set env variables
+        run: |
+          apt-get install jq
+          USER_NAME=$(jq -r '.basics.name' resume.json)FILE_NAME
+          echo "FILE_NAME=$FILE_NAME" >> $GITHUB_ENV
+      - shell: bash
+        run: |
+          mv resume.pdf ${{ env.FILE_NAME }}.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: resume.pdf
+          files: ${{ env.FILE_NAME }}.pdf
           draft: false
           prerelease: false
