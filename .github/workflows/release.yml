@@ -31,8 +31,8 @@ jobs:
           name: build
       - name: Set env variables
         run: |
-          sudo apt-get install jq
-          [[ -f resume.json ]] && FILE_NAME=$(jq -r '.basics.name' resume.json) && echo "FILE_NAME=$FILE_NAME" >> $GITHUB_ENV
+          FILE_NAME=$(jq -r '.basics.name' resume.json)
+          echo "FILE_NAME=$FILE_NAME" >> $GITHUB_ENV
       - shell: bash
         run: |
           mv resume.pdf ${{ env.FILE_NAME }}.pdf
