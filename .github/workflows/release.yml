@@ -37,6 +37,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: ${{ GITHUB_REPOSITORY_OWNER }}.pdf
+          files: ${{ env.GITHUB_REPOSITORY_OWNER }}.pdf
           draft: false
           prerelease: false
