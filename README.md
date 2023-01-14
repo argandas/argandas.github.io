@@ -33,6 +33,11 @@ The release workflow use the resume.tex file as input and returns resume.pdf .
 
 The release workflow is triggered when pushing a git tag (e.g. v1.0.0) and will upload the PDF file as release artifact.
 
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
 
 
 
