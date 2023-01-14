@@ -6,35 +6,37 @@
             "last": "Arganda"
         },
         "email": "hugo.arganda@gmail.com",
+        "location": "Guadalajara, Jal. Mexico",
+        "phone": "+52 1 332-343-6739",
         "summary": "I am Program Manager experienced in leading multidisciplinary teams (up to 30 members), with more than 11 years of experience in the IT and Automotive industries. Skilled, innovative, and self-learner. Proficient in C, C++, and Python.",
-        "icons": [
-            {
+        "social": {
+            "linkedin": {
                 "href": "https://www.linkedin.com/in/argandas",
                 "class": "fab fa-linkedin-in"
             },
-            {
+            "github": {
                 "href": "https://github.com/argandas",
                 "class": "fab fa-github"
             },
-            {
+            "twitter": {
                 "href": "https://twitter.com/argandas",
                 "class": "fab fa-twitter"
             },
-            {
+            "pdf_download": {
                 "href": "https://github.com/argandas/argandas.github.io/releases/latest/download/Hugo_Arganda_Resume.pdf",
                 "class": "fa-solid fa-file-pdf"
             }
-        ],
+        },
         "picture": "assets/img/profile.jpg"
     },
     "language": [
         {
             "name": "Spanish",
-            "domain": "Native"
+            "level": "Native"
         },
         {
             "name": "English",
-            "domain": "C2 Proficient (EFSET 78/100)"
+            "level": "C2 Proficient (EFSET 78/100)"
         }
     ],
     "experience": [
@@ -79,10 +81,10 @@
             "summary": [
                 "Worked in close liaison with Automotive OEMs, Tier 1, and Tier 2 clients",
                 "Led multidisciplinary teams, with headcount of 14+",
-                "Participated in 6 project bids, maintaining a +80% win rate (5 out of 6)",
+                "Participated in 6 project bids, maintaining a +80 pct. win rate (5 out of 6)",
                 "Implemented full project life cycle for 5 projects",
-                "Maintained project contribution margin above 30% ",
-                "Improved process adherence, reducing lead times by 80%",
+                "Maintained project contribution margin above 30 pct. ",
+                "Improved process adherence, reducing lead times by 80 pct.",
                 "Technical interviewer for C, C++, and Python developers"
             ]
         },
@@ -144,12 +146,12 @@
     "education": [
         {
             "school": "Universidad de Guadalajara",
-            "dates": "2017",
+            "date": "2017",
             "degree": "Electronics and Communications Engineering"
         },
         {
             "school": "CETI Colomos",
-            "dates": "2009",
+            "date": "2009",
             "degree": "Technologist in Electronics and Communications"
         }
     ],

@@ -1,0 +1,116 @@
+%----------------------------------------------------------------------------------------
+%	DOC CLASS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Default font size
+
+%----------------------------------------------------------------------------------------
+%	DOC BEGIN
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\customheader
+    {\VAR{ data.about.name.full }}
+    {\VAR{ data.experience[0].title } @ \VAR{ data.experience[0].company }}
+    {\href{mailto:\VAR{data.about.email }}{\VAR{ data.about.email }}}
+    {\VAR{ data.about.phone }}
+    {\href{\VAR{ data.about.social.linkedin.href }}{\VAR{ data.about.social.linkedin.href }}}
+    {\VAR{ data.about.location }}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY
+%----------------------------------------------------------------------------------------
+
+\summary
+{Summary}
+    {\VAR{ data.about.summary }}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\BLOCK{ for exp_item in data.experience }
+
+\job
+    {\VAR{ exp_item.company }}
+    {\VAR{ exp_item.title }}
+    {\VAR{ exp_item.date.start }}
+    {\VAR{ exp_item.date.end }}
+    {\VAR{ exp_item.location }}
+    {
+    \begin{itemize-bullets}
+\BLOCK{ for exp_summary_item in exp_item.summary }
+    \item{\VAR{ exp_summary_item }}
+\BLOCK{ endfor }
+    \end{itemize-bullets}
+    }
+
+\BLOCK{ endfor }
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills and Tools}
+
+\BLOCK{ for title, skills in data.skills.items() }
+
+\skillgroup
+    {\VAR{ title }}
+    {
+    \begin{itemize-bullets}
+    \BLOCK{ for skill in skills }
+    \item{\VAR{ skill }}
+    \BLOCK{ endfor }
+    \end{itemize-bullets}
+    }
+
+\BLOCK{ endfor }
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\BLOCK{ for lang_item in data.language }
+
+\langitem
+    {\VAR{ lang_item.name }}
+    {\VAR{ lang_item.level }}
+
+\BLOCK{ endfor }
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\BLOCK{ for edu_item in data.education }
+
+\eduitem
+    {\VAR{ edu_item.date }}
+    {\VAR{ edu_item.degree }}
+    {\VAR{ edu_item.school }}
+
+\BLOCK{ endfor }
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

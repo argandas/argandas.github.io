@@ -49,11 +49,11 @@
                     <p class="lead mb-3">{{ data.about.summary }}</p>
                     <p class="lead mb-5">To download the latest version of my resume click <a href="https://github.com/argandas/argandas.github.io/releases/latest/download/Hugo_Arganda_Resume.pdf">here</a></p>
                     <div class="social-icons mb-5">
-                        {% for icon in data.about.icons %}
-                        <a class="social-icon" href="{{ icon.href }}"><i class="{{ icon.class }}"></i></a>
+                        {% for key, value in data.about.social.items() %}
+                        <a class="social-icon" href="{{ value.href }}"><i class="{{ value.class }}"></i></a>
                         {% endfor %}
                     </div>
-                    <p class="lead mb-5"><a href="https://github.com/argandas/argandas.github.io">github.com/argandas/argandas.github.io</a></p>
+                    <p class="lead mb-5">Source code: <a href="https://github.com/argandas/argandas.github.io">argandas.github.io</a></p>
                 </div>
             </section>
             <hr class="m-0" />
@@ -61,20 +61,20 @@
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
-                {% for exp_item in data.experience %}
+                    {% for exp_item in data.experience %}
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">{{ exp_item.title }}</h3>
                             <div class="subheading mb-3">{{ exp_item.company }} @ {{ exp_item.location }}</div>
                             <p>
                             {% for exp_summary_item in exp_item.summary %}
-                                {{ exp_summary_item }}<br />
+                            {{ exp_summary_item }}<br />
                             {% endfor %}
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">{{ exp_item.date.start }} - {{ exp_item.date.end }}</span></div>
                     </div>
-                {% endfor %}
+                    {% endfor %}
                 </div>
             </section>
             <hr class="m-0" />
@@ -82,15 +82,15 @@
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
-                {% for edu_item in data.education %}
+                    {% for edu_item in data.education %}
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">{{ edu_item.degree }}</h3>
                             <div class="subheading mb-3">{{ edu_item.school }}</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">{{ edu_item.dates }}</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{ edu_item.date }}</span></div>
                     </div>
-                {% endfor %}
+                    {% endfor %}
                 </div>
             </section>
             <hr class="m-0" />
@@ -113,14 +113,14 @@
             <section class="resume-section" id="languages">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Languages</h2>
-                {% for lang_item in data.language %}
+                    {% for lang_item in data.language %}
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">{{ lang_item.name }}</h3>
-                            <div class="subheading mb-3">{{ lang_item.domain }}</div>
+                            <div class="subheading mb-3">{{ lang_item.level }}</div>
                         </div>
                     </div>
-                {% endfor %}
+                    {% endfor %}
                 </div>
             </section>
             <hr class="m-0" />

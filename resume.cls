@@ -22,7 +22,7 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage{fontspec} % Required for specification of custom fonts
-\setmainfont[Path = latex/fonts/,
+\setmainfont[Path = assets/fonts/,
 Extension = .ttf,
 BoldFont = Roboto-Bold,
 ItalicFont = Roboto-Italic,

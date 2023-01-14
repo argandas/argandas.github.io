@@ -31,12 +31,12 @@ jobs:
           name: build
       - shell: bash
         run: |
-          mv resume.pdf Hugo_Arganda_Resume.pdf
+          mv resume.pdf ${{ GITHUB_REPOSITORY_OWNER }}.pdf
       - name: Release
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: Hugo_Arganda_Resume.pdf
+          files: ${{ GITHUB_REPOSITORY_OWNER }}.pdf
           draft: false
           prerelease: false
