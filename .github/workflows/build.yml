@@ -24,16 +24,16 @@ jobs:
     if: contains(github.ref, 'tags/v')
     needs: [build]
     steps:
-    - name: Download artifacts
-      uses: actions/download-artifact@v3
-      with:
-        name: pdf-resume
-    - name: Release
-      uses: softprops/action-gh-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        files: |
-          ./resume.pdf
-        draft: false
-        prerelease: false
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: pdf-resume
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            ./resume.pdf
+          draft: false
+          prerelease: false
