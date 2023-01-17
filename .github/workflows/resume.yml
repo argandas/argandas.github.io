@@ -1,0 +1,39 @@
+name: resume
+
+on:
+  push: {}
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: texlive/texlive:latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Compile LaTex to PDF
+        run: make
+      - name: Upload artifacts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: pdf-resume
+          path: .build/
+  release:
+    runs-on: ubuntu-latest
+    if: contains(github.ref, 'tags/v')
+    needs: [build]
+    steps:
+    - name: Download artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: pdf-resume
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        files: |
+          ./resume.pdf
+        draft: false
+        prerelease: false
