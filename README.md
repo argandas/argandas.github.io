@@ -4,7 +4,6 @@
 
 [![GitHub Releases](https://badgen.net/github/tag/argandas/argandas.github.io)](https://github.com/argandas/argandas.github.io/releases)
 [![build](https://github.com/argandas/argandas.github.io/workflows/build/badge.svg)](https://github.com/argandas/argandas.github.io/actions/workflows/build.yml)
-[![release](https://github.com/argandas/argandas.github.io/workflows/release/badge.svg)](https://github.com/argandas/argandas.github.io/actions/workflows/release.yml)
 [![PDF Download](https://img.shields.io/badge/Download-PDF-red.svg)](https://github.com/argandas/argandas.github.io/releases/latest/download/resume.pdf)
 [![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 

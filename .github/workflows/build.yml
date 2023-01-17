@@ -1,4 +1,4 @@
-name: resume
+name: build
 
 on:
   push: {}
