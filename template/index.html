@@ -38,12 +38,9 @@
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-1">
-                        {{ data.basics.name }}
-                    </h1>
-                    <div class="subheading mb-5">
-                        {{ data.work[0].position }} @ {{ data.work[0].name }} ·
-                        <a href="mailto:{{ data.basics.email }}">{{ data.basics.email }}</a>
+                    <h1 class="mb-2">{{ data.basics.name }}</h1>
+                    <div class="subheading mb-4">
+                        {{ data.work[0].position }} @ {{ data.work[0].name }} · {{ data.basics.location.city }}, {{ data.basics.location.countryCode }}
                     </div>
                     <p class="lead mb-3">{{ data.basics.summary }}</p>
                     <div class="social-icons mb-3">
@@ -66,7 +63,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">{{ exp_item.position }}</h3>
-                            <div class="subheading mb-2">{{ exp_item.name }} @ {{ exp_item.location.address }}</div>
+                            <div class="subheading mb-2">{{ exp_item.name }} @ {{ exp_item.location.city }}, {{ exp_item.location.countryCode }}</div>
                             <ul class="fa-ul mb-3">
                                 {% for exp_summary_item in exp_item.summary %}
                                 <li><span class="fa-li"><i class="fas fa-check"></i></span>{{ exp_summary_item }}</li>

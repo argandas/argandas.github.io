@@ -12,6 +12,10 @@
         "phone": "+52 1 332-343-6739",
         "summary": "Program Manager experienced in leading multidisciplinary teams (up to 30 members), with more than 11 years of experience in the IT and Automotive industries. Skilled, innovative, and self-learner. Proficient in C, C++, and Python.",
         "profiles": {
+            "email": {
+                "url": "mailto:hugo.arganda@gmail.com",
+                "class": "fa-regular fa-envelope"
+            },
             "linkedin": {
                 "url": "https://www.linkedin.com/in/argandas",
                 "class": "fab fa-linkedin-in"
@@ -44,7 +48,10 @@
         {
             "position": "Program Manager",
             "name": "Luxoft",
-            "location": "Guadalajara, Jal. Mexico",
+            "location": {
+                "city": "Guadalajara",
+                "countryCode": "MX"
+            },
             "startDate": "2022-05-01",
             "endDate": "Present",
             "summary": [
@@ -55,7 +62,10 @@
         {
             "position": "Project Manager",
             "name": "Luxoft",
-            "location": "Guadalajara, Jal. Mexico",
+            "location": {
+                "city": "Guadalajara",
+                "countryCode": "MX"
+            },
             "startDate": "2018-07-31",
             "endDate": "2022-05-31",
             "summary": [
@@ -74,7 +84,10 @@
             "position": "Senior Software Developer",
             "startDate": "2018-04-30",
             "endDate": "2018-07-31",
-            "location": "Guadalajara, Jal. Mexico",
+            "location": {
+                "city": "Guadalajara",
+                "countryCode": "MX"
+            },
             "summary": [
                 "Coded in Embedded C for ADAS ECUs (PAM, IPMB)",
                 "Analyzed Functional Safety (ISO 26262) Software Requirements"
@@ -85,7 +98,10 @@
             "position": "Embedded Software Developer",
             "startDate": "2015-12-31",
             "endDate": "2018-03-31",
-            "location": "Guadalajara, Jal. Mexico",
+            "location": {
+                "city": "Guadalajara",
+                "countryCode": "MX"
+            },
             "summary": [
                 "Developed drivers and applications for telematic devices (GSM, GPS, BLE)",
                 "Coded in Embedded C for STM32 MCUs (ARM)",
@@ -97,7 +113,10 @@
             "position": "Senior Embedded Tester",
             "startDate": "2014-06-30",
             "endDate": "2015-11-30",
-            "location": "Guadalajara, Jal. Mexico",
+            "location": {
+                "city": "Guadalajara",
+                "countryCode": "MX"
+            },
             "summary": [
                 "Created a proprietary testing framework (Python, Go, MongoDB, REST, JSON, Bootstrap)",
                 "Automated automotive protocols testing (CAN, J1939, J1850, KWP2000, ISO-9141)",
@@ -109,7 +128,10 @@
             "position": "System Testing Trainee",
             "startDate": "2011-05-31",
             "endDate": "2014-02-28",
-            "location": "Guadalajara, Jal. Mexico",
+            "location": {
+                "city": "Guadalajara",
+                "countryCode": "MX"
+            },
             "summary": [
                 "Implemented test automation scripts (Python, NI LabVIEW, and Agilent TestExec)",
                 "Tested Airbag Control Units (ACU) and Seatbelt Reminder (SBR) ECUs"
