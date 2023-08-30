@@ -58,7 +58,8 @@
                 "Stakeholder management",
                 "Budgeting and financial management",
                 "Hiring Manager for US and MX positions",
-                "Leading multidisciplinary teams, with headcount of 30+"
+                "Utilized analytical tools, such as Tableau for data-driven decision-making",
+                "Leading multidisciplinary teams, with a headcount of 30+"
             ]
         },
         {
@@ -80,6 +81,41 @@
             ]
         },
         {
+            "position": "Software Project Manager",
+            "name": "Luxoft",
+            "location": {
+                "city": "Guadalajara",
+                "countryCode": "MX"
+            },
+            "startDate": "2021-06-31",
+            "endDate": "2022-05-31",
+            "summary": [
+                "Worked in close liaison with Automotive OEMs, Tier 1, and Tier 2 clients",
+                "Led a team of 4 project managers, overseeing their projects and promoting best practices",
+                "Developed and maintained strong relationships with clients, stakeholders, and team members",
+                "Led a multicultural team (Egypt, India, USA, and Mexico)"
+            ]
+        },
+        {
+            "position": "Technical Project Manager",
+            "name": "Luxoft",
+            "location": {
+                "city": "Guadalajara",
+                "countryCode": "MX"
+            },
+            "startDate": "2020-01-31",
+            "endDate": "2021-06-31",
+            "summary": [
+                "Provided support to reflash Automotive ECUs",
+                "Software development in C++ and JavaScript",
+                "Participated in 6 project bids, maintaining a +80 pct. win rate (5 out of 6)",
+                "Implemented full project life cycle for 5 projects",
+                "Maintained project contribution margin above 30 pct.",
+                "Improved process adherence, reducing lead times by 80 pct.",
+                "Technical interviewer for C, C++, and Python developers"
+            ]
+        },
+        {
             "position": "Project Manager",
             "name": "Luxoft",
             "location": {
@@ -87,17 +123,11 @@
                 "countryCode": "MX"
             },
             "startDate": "2018-07-31",
-            "endDate": "2022-05-31",
+            "endDate": "2020-01-31",
             "summary": [
                 "Worked in close liaison with Automotive OEMs, Tier 1, and Tier 2 clients",
-                "Software development in C++ and JavaScript for automotive applications",
-                "Led multidisciplinary teams, with a maximum headcount of 14",
-                "Led multicultural teams (Egypt, India, USA)",
-                "Participated in 6 project bids, maintaining a +80 pct. win rate (5 out of 6)",
-                "Implemented full project life cycle for 5 projects",
-                "Maintained project contribution margin above 30 pct.",
-                "Improved process adherence, reducing lead times by 80 pct.",
-                "Technical interviewer for C, C++, and Python developers"
+                "Led two software development teams, with a maximum headcount of 14 members",
+                "Worked on bug fixing and paying technical debt"
             ]
         },
         {
@@ -181,7 +211,7 @@
     ],
     "skills": {
         "Project Management": [
-            "CMMI, ASPICE, MS Project, Jira, Confluence, Rally, TeamForge",
+            "CMMI, ASPICE, MS Project, Jira, Confluence, Rally, TeamForge, Tableau",
             "Project life-cycle, V-Model, Leadership, Scrum (Scrum Master, Product Owner)",
             "Cost Control, Time management, Effective communication, Risk assessment"
         ],
