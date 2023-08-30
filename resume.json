@@ -72,10 +72,12 @@
             "startDate": "2022-05-01",
             "endDate": "2023-02-01",
             "summary": [
-                "Led IoT fleet solution development",
-                "Architected Infrastructure as a Service (IaaS) on the AWS platform",
+                "Led Edge Computing device development to assess driving behaviors",
+                "Provisioned Infrastructure as Code (IaC) using AWS CloudFormation",
                 "Integrated AWS IoT services like Greengrass, Fleetwise, and IoT Core",
-                "Integrated telematics (LTE), GPS tracking, and CAN communication to assess driving behaviors",
+                "Developed AWS Greengrass Components in C++ and Python",
+                "Developed Embedded Linux image using Yocto project",
+                "Integrated telematics (LTE), GPS tracking, and CAN communication to Linux Embedded device",
                 "Worked closely with hardware contractors to define hardware requirements and specifications",
                 "Integrated WiFi and LTE cellular module (Quectel)"
             ]
