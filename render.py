@@ -62,10 +62,26 @@ def render_file(template, dst):
         fh.close()
 
 
+def replace_percentage_recursive(data, replacement_char):
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if isinstance(value, (dict, list)):
+                data[key] = replace_percentage_recursive(value, replacement_char)
+            elif isinstance(value, str) and '%' in value:
+                data[key] = value.replace('%', replacement_char)
+    elif isinstance(data, list):
+        for i, item in enumerate(data):
+            if isinstance(item, (dict, list)):
+                data[i] = replace_percentage_recursive(item, replacement_char)
+            elif isinstance(item, str) and '%' in item:
+                data[i] = item.replace('%', replacement_char)
+    return data
+
 def render_latex(template, dst):
     tmpl = latex_jinja_env.get_template(template)
     with open(dst, "w+") as fh:
-        fh.write(tmpl.render(data=input_data))
+        test_data = replace_percentage_recursive(input_data, "\%")
+        fh.write(tmpl.render(data=test_data))
         fh.close()
 
 
