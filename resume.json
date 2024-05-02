@@ -46,7 +46,7 @@
     ],
     "work": [
         {
-            "position": "Technical Program Manager - Android Automotive QA Automation",
+            "position": "Technical Program Manager",
             "name": "Luxoft",
             "location": {
                 "city": "Guadalajara",
@@ -55,7 +55,7 @@
             "startDate": "2023-02-01",
             "endDate": "Present",
             "summary": [
-                "Led an Android Automotive automation testing team",
+                "Led an Android Automotive QA automation team",
                 "Implemented process improvements resulting in a 40% increase in test automation pass rate",
                 "Executed process improvements that resulted in a 60% time reduction in automation test cycles",
                 "Implemented CI strategy, leading to a 20% increase in team productivity",
@@ -77,18 +77,18 @@
             "startDate": "2022-05-01",
             "endDate": "2023-02-01",
             "summary": [
-                "Led Edge Computing device development to assess driving behaviors",
+                "Led a program to develop an Edge Computing device to assess driving behaviors",
+                "Program manager overseeing all the stages and suppliers of the program (hardware and software) from POC to SOP",
                 "Provisioned Infrastructure as Code (IaC) using AWS CloudFormation",
                 "Integrated AWS IoT services like Greengrass, Fleetwise, and IoT Core",
                 "Developed AWS Greengrass Components in C++ and Python",
-                "Developed Embedded Linux image using Yocto project",
-                "Integrated telematics (LTE), GPS tracking, and CAN communication to Linux Embedded device",
-                "Worked closely with hardware contractors to define hardware requirements and specifications",
-                "Integrated WiFi and LTE cellular module (Quectel)"
+                "Linux Embedded development for NXP S32G (Vehicle Network Processor)",
+                "Integrated WiFi and LTE drivers (Quectel) for Linux",
+                "Developed CAN communications components (SocketCAN)"
             ]
         },
         {
-            "position": "Software Project Manager - Automotive ADAS",
+            "position": "Software Project Manager",
             "name": "Luxoft",
             "location": {
                 "city": "Guadalajara",
@@ -97,7 +97,7 @@
             "startDate": "2021-06-01",
             "endDate": "2022-05-01",
             "summary": [
-                "Led the Software development for an Automotive Parking Assistant Module (PAM)",
+                "Led the Software development for an Automotive ADAS project (Parking Assistant Module - PAM)",
                 "Worked in close liaison with Automotive OEMs, Tier 1, and Tier 2 clients",
                 "Led a team of 4 project managers and test managers, overseeing their projects and promoting best practices",
                 "Developed and maintained strong relationships with clients, stakeholders, and team members",
@@ -105,7 +105,7 @@
             ]
         },
         {
-            "position": "Technical Project Manager - Automotive Heavy Duty Vehicles",
+            "position": "Technical Project Manager",
             "name": "Luxoft",
             "location": {
                 "city": "Guadalajara",
@@ -114,10 +114,10 @@
             "startDate": "2020-01-31",
             "endDate": "2021-06-01",
             "summary": [
-                "New feature development and maintenance of an Automotive ECU reflash tool",
-                "Implemented reflash sequences using automotive protocols (CAN, J1939, J1850, KWP2000, ISO-9141)",
+                "New feature development and maintenance of an Automotive Heavy Duty Vehicles ECU reflash tool",
+                "Implemented ECU flashing sequences using automotive protocols (CAN, J1939, J1850, KWP2000, ISO-9141)",
                 "Developed C++ and JavaScript software components",
-                "Developed Windows DLLs using C++ to interface with third-party hardware interfaces (Value-CAN)",
+                "Developed Windows DLLs (using C++) to interface with third-party hardware interfaces (Value-CAN)",
                 "Achieved 80% win rate in 6 bids, managed 5 full project lifecycles",
                 "Maintained 30% contribution margin, cut lead times by 80%",
                 "Conducted technical interviews for C, C++, and Python"
@@ -133,6 +133,7 @@
             "startDate": "2018-07-31",
             "endDate": "2020-01-31",
             "summary": [
+                "Led the Software development for an Automotive ADAS project (Parking Assistant Module - PAM)",
                 "Worked in close liaison with Automotive OEMs, Tier 1, and Tier 2 clients",
                 "Led two software development teams, with a maximum headcount of 14 members",
                 "Focused on bug fixing and addressing technical debt"
@@ -140,7 +141,7 @@
         },
         {
             "name": "Luxoft",
-            "position": "Senior Software Developer - Automotive ADAS",
+            "position": "Senior Software Developer",
             "startDate": "2018-04-30",
             "endDate": "2018-07-31",
             "location": {
@@ -154,7 +155,7 @@
         },
         {
             "name": "Dextra Technologies",
-            "position": "Embedded Software Developer - Automotive IoT",
+            "position": "Embedded Software Developer",
             "startDate": "2015-12-01",
             "endDate": "2018-04-01",
             "location": {
@@ -163,7 +164,7 @@
             },
             "summary": [
                 "Utilized C programming language for ARM uC and adhered to MISRA-C standard",
-                "Developing code components within FreeRTOS to manage communication tasks and protocols.",
+                "Developed code components within FreeRTOS to manage communication tasks and protocols.",
                 "Implemented OTA Firmware update communications manager module (GSM, CDMA)",
                 "Implemented low-level driver code for cellular and GPS modems (u-blox)",
                 "Implemented low-level driver code for BLE modems (Nordic)",
@@ -172,7 +173,7 @@
         },
         {
             "name": "Dextra Technologies",
-            "position": "Senior Embedded Tester - Automotive IoT QA",
+            "position": "Senior Embedded Tester",
             "startDate": "2014-06-30",
             "endDate": "2015-11-30",
             "location": {
@@ -180,7 +181,7 @@
                 "countryCode": "MX"
             },
             "summary": [
-                "Designed and implemented an automation test framework from scratch using Python, and Go",
+                "Designed and implemented a QA Automation Framework from scratch (using Python, and Go)",
                 "Validated GPS functionality, vehicle protocols (CAN, J1939, J1850, KWP2000, ISO-9141), and BLE"
             ]
         },
@@ -194,7 +195,7 @@
                 "countryCode": "MX"
             },
             "summary": [
-                "Developed and executed testing for the Airbag Control Unit (ACU) and the Seatbelt Reminder (SBR)",
+                "Developed and executed testing for Automotive ADAS ECUs (Airbag Control Unit - ACU, and Seatbelt Reminder - SBR)",
                 "Implemented test equipment instrumentation using LabVIEW, and TestExec",
                 "Implemented test automation using Python"
             ]
@@ -232,7 +233,7 @@
             "UART, SPI, I2C, BLE, USB HID, HTTP"
         ],
         "Other": [
-            "ARM, STM32, ST CubeMX, DOORS, Vector CANoe, MISRA-C, Yocto",
+            "ARM, STM32, ST CubeMX, DOORS, Vector CANoe, MISRA-C, Yocto, FreeRTOS",
             "SQL, MongoDB, REST, JSON, XML, HTML, Bootstrap, CSS",
             "Windows, Linux (Ubuntu)",
             "Docker, Kubernetes (K3S)",
