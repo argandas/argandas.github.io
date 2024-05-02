@@ -7,7 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: texlive/texlive:latest
+    container: 
+      image: texlive/texlive:latest
+      options: --user 1001
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
