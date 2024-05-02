@@ -10,7 +10,7 @@
             "region": "Jalisco"
         },
         "phone": "+52 1 332-343-6739",
-        "summary": "Technical Program Manager experienced in leading multidisciplinary teams (up to 30 members), with more than 12 years of experience in the automotive and telecommunications industries. Skilled, innovative, and self-learner. Proficient in C, C++, and Python.",
+        "summary": "With more than 12 years of experience in automotive and telecommunications, I lead diverse teams and deliver top-notch results. I'm skilled at balancing leadership duties with hands-on technical work.",
         "profiles": {
             "email": {
                 "url": "mailto:hugo.arganda@gmail.com",
@@ -46,7 +46,7 @@
     ],
     "work": [
         {
-            "position": "Technical Program Manager",
+            "position": "Technical Program Manager - Android Automotive QA Automation",
             "name": "Luxoft",
             "location": {
                 "city": "Guadalajara",
@@ -55,18 +55,20 @@
             "startDate": "2023-02-01",
             "endDate": "Present",
             "summary": [
+                "Led an Android Automotive automation testing team",
                 "Implemented process improvements resulting in a 40% increase in test automation pass rate",
-                "Executed process improvements that resulted in a 60% reduction in automation test cycles",
-                "Implemented CI strategy, leading to a 20% increase in team productivity", 
-                "Functioned as the Hiring Manager overseeing positions in the US and MX",
+                "Executed process improvements that resulted in a 60% time reduction in automation test cycles",
+                "Implemented CI strategy, leading to a 20% increase in team productivity",
+                "Technical lead for Python and Ruby scripting",
+                "Developed BDD step definitions in Ruby",
+                "People manager overseeing team members in the US and MX",
                 "Successfully achieved a 30+ member team staffing within a span of 6 months",
                 "Collaborated closely with the recruitment team to devise and execute targeted hiring strategies",
-                "Managed budgeting and financial aspects related to project execution",
-                "Scripting in Python and Ruby to support Android App QA Automation"
+                "Managed budgeting and financial aspects related to project delivery"
             ]
         },
         {
-            "position": "Technical Program Manager",
+            "position": "Technical Program Manager - Automotive IoT",
             "name": "Luxoft",
             "location": {
                 "city": "Guadalajara",
@@ -86,7 +88,7 @@
             ]
         },
         {
-            "position": "Software Project Manager",
+            "position": "Software Project Manager - Automotive ADAS",
             "name": "Luxoft",
             "location": {
                 "city": "Guadalajara",
@@ -103,7 +105,7 @@
             ]
         },
         {
-            "position": "Technical Project Manager",
+            "position": "Technical Project Manager - Automotive Heavy Duty Vehicles",
             "name": "Luxoft",
             "location": {
                 "city": "Guadalajara",
@@ -112,16 +114,17 @@
             "startDate": "2020-01-31",
             "endDate": "2021-06-01",
             "summary": [
-                "Oversaw the development and maintenance of an Automotive ECU reflash tool",
-                "Managed C++ and JavaScript software development",
-                "Programmed Windows DLLs using C++",
+                "New feature development and maintenance of an Automotive ECU reflash tool",
+                "Implemented reflash sequences using automotive protocols (CAN, J1939, J1850, KWP2000, ISO-9141)",
+                "Developed C++ and JavaScript software components",
+                "Developed Windows DLLs using C++ to interface with third-party hardware interfaces (Value-CAN)",
                 "Achieved 80% win rate in 6 bids, managed 5 full project lifecycles",
                 "Maintained 30% contribution margin, cut lead times by 80%",
-                "Conducted technical interviews for C, C++, and Python developers"
+                "Conducted technical interviews for C, C++, and Python"
             ]
         },
         {
-            "position": "Project Manager",
+            "position": "Project Manager - Automotive ADAS",
             "name": "Luxoft",
             "location": {
                 "city": "Guadalajara",
@@ -137,7 +140,7 @@
         },
         {
             "name": "Luxoft",
-            "position": "Senior Software Developer",
+            "position": "Senior Software Developer - Automotive ADAS",
             "startDate": "2018-04-30",
             "endDate": "2018-07-31",
             "location": {
@@ -151,7 +154,7 @@
         },
         {
             "name": "Dextra Technologies",
-            "position": "Embedded Software Developer",
+            "position": "Embedded Software Developer - Automotive IoT",
             "startDate": "2015-12-01",
             "endDate": "2018-04-01",
             "location": {
@@ -160,6 +163,7 @@
             },
             "summary": [
                 "Utilized C programming language for ARM uC and adhered to MISRA-C standard",
+                "Developing code components within FreeRTOS to manage communication tasks and protocols.",
                 "Implemented OTA Firmware update communications manager module (GSM, CDMA)",
                 "Implemented low-level driver code for cellular and GPS modems (u-blox)",
                 "Implemented low-level driver code for BLE modems (Nordic)",
@@ -168,7 +172,7 @@
         },
         {
             "name": "Dextra Technologies",
-            "position": "Senior Embedded Tester",
+            "position": "Senior Embedded Tester - Automotive IoT QA",
             "startDate": "2014-06-30",
             "endDate": "2015-11-30",
             "location": {
@@ -182,7 +186,7 @@
         },
         {
             "name": "Continental Automotive",
-            "position": "System Testing Trainee",
+            "position": "System Testing Trainee - Automotive ADAS",
             "startDate": "2011-05-31",
             "endDate": "2014-02-28",
             "location": {
@@ -190,9 +194,9 @@
                 "countryCode": "MX"
             },
             "summary": [
-                "Implemented test automation using Python",
+                "Developed and executed testing for the Airbag Control Unit (ACU) and the Seatbelt Reminder (SBR)",
                 "Implemented test equipment instrumentation using LabVIEW, and TestExec",
-                "Developed and executed testing for the Airbag Control Unit (ACU) and the Seatbelt Reminder (SBR)"
+                "Implemented test automation using Python"
             ]
         }
     ],
@@ -221,7 +225,7 @@
             "Cost Control, Time management, Effective communication, Risk assessment"
         ],
         "Programming Languages": [
-            "C, C++, Python, Go, Javascript, and Bash"
+            "C, C++, Python, Ruby, Go, and Javascript"
         ],
         "Communication protocols": [
             "MQTT, CAN, UDS, J1939, ISO-15765, RP1210B",
