@@ -21,6 +21,7 @@ jobs:
         run: |
           python -m pip install -r requirements.txt
           python render.py
+          mkdir -p .build
       - name: Auto commit changes
         uses: EndBug/add-and-commit@v9
         with:
@@ -36,6 +37,9 @@ jobs:
           name: pdf-resume
           path: |
             .build/
+      - name: List generated files
+        run: |
+          ls -la .build/
   release:
     runs-on: ubuntu-latest
     if: contains(github.ref, 'tags/v')
