@@ -33,16 +33,16 @@ jobs:
           add: 'index.html resume.tex'
 
       - name: Compile LaTex to PDF
-        run: make
+        run: |
+          make
+          ls -la .build/
 
-      # Upload just the PDF (adjust path if your Makefile outputs elsewhere)
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: pdf-resume
-          path: .build/resume.pdf     # <- make sure this matches your output
+          path: .build/resume.pdf
           if-no-files-found: error
-          retention-days: 14          # optional; set what you want
 
   release:
     runs-on: ubuntu-latest
@@ -53,14 +53,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: pdf-resume
-          path: .                     # download to repo root
-
       - name: Release
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           files: |
-            ./resume.pdf              # this file now exists from the download step
+            ./resume.pdf
           draft: false
           prerelease: false
