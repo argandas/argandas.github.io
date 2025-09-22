@@ -37,6 +37,17 @@ def parse_date(old_date):
     return new_date
 
 
+def parse_date_year(old_date):
+    date_format = '%Y-%m-%d'
+    new_date = ""
+    try:
+        new_date = datetime.datetime.strptime(old_date, date_format).date().strftime("%Y")
+    except ValueError:
+        print(f"[Warning] Failed to parse date: \"{old_date}\"")
+        new_date = old_date
+    return new_date
+
+
 def load_config(config_file):
     global input_data
     with open(config_file, "r") as f:
@@ -51,8 +62,8 @@ def load_config(config_file):
             input_data['work'][idx]['endDate'] = parse_date(val['endDate'])
     if 'education' in input_data:
         for idx, val in enumerate(input_data['education']):
-            input_data['education'][idx]['startDate'] = parse_date(val['startDate'])
-            input_data['education'][idx]['endDate'] = parse_date(val['endDate'])
+            input_data['education'][idx]['startDate'] = parse_date_year(val['startDate'])
+            input_data['education'][idx]['endDate'] = parse_date_year(val['endDate'])
 
 
 def render_file(template, dst):

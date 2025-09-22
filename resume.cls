@@ -146,12 +146,13 @@
   \vspace{-6mm}
 }
 
-\newcommand{\eduitem}[3]{%
+\newcommand{\eduitem}[5]{%
   \begin{tabbing}
-    \hspace{2.5cm} \= \kill
-    \hspace{0.5cm}\color{dark-black}{#1} \> \color{light-black}{{#2} • {#3}}
+    \hspace{1.5cm} \= \kill
+    \hspace{0.5cm}\color{dark-black}{\textbf{#1} • {#2}}\\
+    \hspace{0.5cm}{#3}\\
+    \hspace{0.5cm}{#4} - {#5}\\
   \end{tabbing}
-  \vspace{-6mm}
 }
 
 % Now **2 args** (was 3)
@@ -160,5 +161,5 @@
     \hspace{2.5cm} \= \kill
     \hspace{0.5cm}\color{dark-black}\textbf{#1} \> \color{light-black}{#2}
   \end{tabbing}
-  \vspace{-6mm}
+  \vspace{-5mm}
 }

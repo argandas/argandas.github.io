@@ -10,7 +10,7 @@
             "region": "Jalisco"
         },
         "phone": "+52 1 332-343-6739",
-        "summary": "Embedded Software Engineer with 14+ years in automotive and telecommunications. Expertise in C/C++, Python, and embedded systems (Linux, FreeRTOS) for safety-critical ADAS and connectivity. Hands-on experience designing middleware, hardware abstraction layers, real-time communication protocols, and test automation. Proven ability to balance leadership with deep technical execution in autonomy and distributed embedded platforms.",
+        "summary": "Embedded Software Engineer with 14+ years in automotive and telecommunications. Expertise in C/C++, Python, and embedded systems for ADAS and connectivity. Hands-on experience designing middleware, hardware abstraction layers, real-time communication protocols, and test automation. Proven ability to balance leadership with deep technical execution in autonomy and distributed embedded platforms.",
         "profiles": {
             "email": {
                 "url": "mailto:hugo.arganda@gmail.com",
@@ -58,14 +58,13 @@
                 "Programming in Python, Ruby, Bash/Batch, and Groovy for Android Automotive test automation",
                 "Implemented CI/CD testing pipelines in Jenkins for system testing",
                 "Developed scripts in Python (librosa and TensorFlow) for automatic audio recognition",
-                "Developed scripts in Python (OpenCV) library for automatic image recognition",
+                "Developed scripts in Python (OpenCV) for automatic image recognition",
                 "Successfully scaled the team by recruiting and onboarding 30+ members within 6 months",
-                "Collaborated with recruitment to create and execute hiring strategies, aligning team capabilities with project needs",
-                "Managed a diverse team across the US and MX, fostering collaboration and aligning efforts with project goals",
-                "Maintained strong relationships with key stakeholders, including executives and engineering directors",
-                "Managed budgeting, timesheets, and invoicing, ensuring financial accuracy and alignment with project timelines",
-                "Cut automation test delivery time by 75%, accelerating feedback loops and boosting testing efficiency",
-                "Improved test result reliability by 20% through process enhancements, boosting software quality"
+                "Designed hiring strategies, aligning team capabilities with project needs",
+                "Managed a diverse team across the US and MX, fostering collaboration and aligning efforts",
+                "Managed budgeting, timesheets, and invoicing, ensuring financial accuracy",
+                "Reduced automation test delivery time by 75%",
+                "Improved test result reliability by 20% reducing manual results verification"
             ]
         },
         {
@@ -199,11 +198,15 @@
     "education": [
         {
             "institution": "Universidad de Guadalajara",
-            "degree": "Bachelor of Science in Electronics and Communications Engineering (BS ECE)",
+            "degree": "Bachelor of Science-  Electronics and Communications Engineering (BS ECE)",
             "startDate": "2010-12-31",
             "endDate": "2017-12-31",
             "score": "",
-            "courses": []
+            "courses": [],
+            "location": {
+                "city": "Guadalajara",
+                "countryCode": "MX"
+            }
         },
         {
             "institution": "Centro de Enseñanza Técnica Industrial",
@@ -211,7 +214,11 @@
             "startDate": "2005-12-31",
             "endDate": "2009-12-31",
             "score": "",
-            "courses": []
+            "courses": [],
+            "location": {
+                "city": "Guadalajara",
+                "countryCode": "MX"
+            }
         }
     ],
     "skills": {
@@ -239,7 +246,7 @@
             "DB: SQL, and MongoDB",
             "Other: REST API, JSON, XML, HTML + CSS, Bootstrap"
         ],
-        "Tools & Testing": [
+        "Tools and Testing": [
             "Jenkins CI/CD (Groovy pipelines)",
             "System debugging (ICP, JTAG, OpenOCD)",
             "Vector CANoe, LabVIEW, TestExec",

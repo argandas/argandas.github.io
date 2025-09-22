@@ -105,9 +105,11 @@
 \BLOCK{ for edu_item in data.education }
 
 \eduitem
-    {\VAR{ edu_item.endDate }}
-    {\VAR{ edu_item.degree }}
     {\VAR{ edu_item.institution }}
+    {\VAR{ edu_item.location.city }, \VAR{ edu_item.location.countryCode }}
+    {\VAR{ edu_item.degree }}
+    {\VAR{ edu_item.startDate }}
+    {\VAR{ edu_item.endDate }}
 
 \BLOCK{ endfor }
 
