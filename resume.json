@@ -224,7 +224,7 @@
             "C/C++, Python, Ruby, Go, Bash and Batch",
             "Python libraries: OpenCV and TensorFlow",
             "Git, Bitbucket, GitHub",
-            "ARM (Cortex-M, NXP S32G) and x86_64 architectures"
+            "ARM (Cortex-M, NXP S32G) and x86-64 architectures"
         ],
         "OS / RTOS": [
             "Windows, Linux, Yocto, FreeRTOS"
