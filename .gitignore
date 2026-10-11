@@ -1,0 +1,36 @@
+# Build artifacts
+.build/
+
+# Generated LaTeX outputs (render.py artifacts)
+/resume.tex
+/resume_classic.tex
+/resume_worded.tex
+
+# LaTeX temp/intermediate files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.xdv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Editor/OS
+.DS_Store
+Thumbs.db

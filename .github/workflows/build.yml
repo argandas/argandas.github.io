@@ -30,7 +30,7 @@ jobs:
           author_name: Hugo Arganda
           author_email: hugo.arganda@gmail.com
           message: 'Autocommit generated files'
-          add: 'index.html resume.tex'
+          add: 'index.html'
 
       - name: Compile LaTex to PDF
         run: |

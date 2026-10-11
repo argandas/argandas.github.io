@@ -1,259 +1,278 @@
 {
-    "basics": {
-        "name": "Hugo Arganda",
-        "email": "hugo.arganda@gmail.com",
-        "location": {
-            "address": "",
-            "postalCode": "",
-            "city": "Guadalajara",
-            "countryCode": "MX",
-            "region": "Jalisco"
-        },
-        "phone": "+52 1 332-343-6739",
-        "summary": "Embedded Software Engineer with 14+ years in automotive and telecommunications. Expertise in C/C++, Python, and embedded systems for ADAS and connectivity. Hands-on experience designing middleware, hardware abstraction layers, real-time communication protocols, and test automation. Proven ability to balance leadership with deep technical execution in autonomy and distributed embedded platforms.",
-        "profiles": {
-            "email": {
-                "url": "mailto:hugo.arganda@gmail.com",
-                "class": "fa-regular fa-envelope"
-            },
-            "linkedin": {
-                "url": "https://www.linkedin.com/in/argandas",
-                "class": "fab fa-linkedin-in"
-            },
-            "whatsapp": {
-                "url": "https://wa.me/5213323436739",
-                "class": "fa-brands fa-whatsapp"
-            },
-            "github": {
-                "url": "https://github.com/argandas",
-                "class": "fab fa-github"
-            },
-            "twitter": {
-                "url": "https://twitter.com/argandas",
-                "class": "fab fa-twitter"
-            }
-        }
+  "basics": {
+    "name": "Hugo Enrique Arganda Salazar",
+    "email": "hugo.arganda@gmail.com",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Guadalajara",
+      "countryCode": "MX",
+      "region": "Jalisco"
     },
-    "languages": [
-        {
-            "language": "Spanish",
-            "fluency": "Native"
-        },
-        {
-            "language": "English",
-            "fluency": "C2 Proficient (EFSET 78/100)"
-        }
-    ],
-    "work": [
-        {
-            "position": "Technical Program Manager",
-            "name": "Luxoft",
-            "location": {
-                "city": "Guadalajara",
-                "countryCode": "MX"
-            },
-            "startDate": "2023-02-01",
-            "endDate": "Present",
-            "summary": [
-                "Programming in Python, Ruby, Bash/Batch, and Groovy for Android Automotive test automation",
-                "Implemented CI/CD testing pipelines in Jenkins for system testing",
-                "Developed scripts in Python (librosa and TensorFlow) for automatic audio recognition",
-                "Developed scripts in Python (OpenCV) for automatic image recognition",
-                "Successfully scaled the team by recruiting and onboarding 30+ members within 6 months",
-                "Designed hiring strategies, aligning team capabilities with project needs",
-                "Managed a diverse team across the US and MX, fostering collaboration and aligning efforts",
-                "Managed budgeting, timesheets, and invoicing, ensuring financial accuracy",
-                "Reduced automation test delivery time by 75%",
-                "Improved test result reliability by 20% reducing manual results verification"
-            ]
-        },
-        {
-            "position": "Technical Program Manager",
-            "name": "Luxoft",
-            "location": {
-                "city": "Guadalajara",
-                "countryCode": "MX"
-            },
-            "startDate": "2022-05-01",
-            "endDate": "2023-02-01",
-            "summary": [
-                "Programming in C++ and Python for Edge Computing device",
-                "Linux Embedded development for NXP S32G (Vehicle Network Processor)",
-                "Linux WiFi and LTE drivers integration (Quectel)",
-                "Developed CAN communications components (SocketCAN)",
-                "Provisioned Infrastructure as Code (IaC) using AWS CloudFormation",
-                "Integrated AWS IoT services like Greengrass, Fleetwise, and IoT Core"
-            ]
-        },
-        {
-            "position": "Software Project Manager",
-            "name": "Luxoft",
-            "location": {
-                "city": "Guadalajara",
-                "countryCode": "MX"
-            },
-            "startDate": "2021-06-01",
-            "endDate": "2022-05-01",
-            "summary": [
-                "Development of a distributed embedded platform ADAS project (UDS ECU + SoC)",
-                "Accountable for the software development process V-cycle (ASPICE SWE and MAN)",
-                "Worked in close liaison with Automotive OEMs, Tier 1, and Tier 2 clients",
-                "Led a team of 4 project managers (REQ, SW, and SYS)",
-                "Developed and maintained strong relationships with clients, stakeholders, and team members",
-                "Managed a multicultural team across Egypt, India, USA, and Mexico"
-            ]
-        },
-        {
-            "position": "Technical Project Manager",
-            "name": "Luxoft",
-            "location": {
-                "city": "Guadalajara",
-                "countryCode": "MX"
-            },
-            "startDate": "2020-01-31",
-            "endDate": "2021-06-01",
-            "summary": [
-                "Software development in C++ and Javascript for Automotive Heavy Duty ECUs reflashing",
-                "Implemented ECU flashing sequences (CAN, J1939, J1850, KWP2000, ISO-9141)",
-                "Developed Windows DLLs (using C++) to interface with third-party hardware interfaces (Value-CAN)",
-                "Technical interviewer for C, C++, and Python"
-            ]
-        },
-        {
-            "position": "Project Manager",
-            "name": "Luxoft",
-            "location": {
-                "city": "Guadalajara",
-                "countryCode": "MX"
-            },
-            "startDate": "2018-07-31",
-            "endDate": "2020-01-31",
-            "summary": [
-                "Led the Software development for an Automotive ADAS project (Parking Assistant Module - PAM)",
-                "Worked in close liaison with Automotive OEMs, Tier 1, and Tier 2 clients",
-                "Led two software development teams, with a maximum headcount of 14 members",
-                "Focused on ticket burndown (bug fixing) and addressing ASPICE L1 technical debt"
-            ]
-        },
-        {
-            "name": "Luxoft",
-            "position": "Senior Software Developer",
-            "startDate": "2018-04-30",
-            "endDate": "2018-07-31",
-            "location": {
-                "city": "Guadalajara",
-                "countryCode": "MX"
-            },
-            "summary": [
-                "Programming in C for ADAS ECUs (PAM, IPMB)",
-                "Analyzed Functional Safety (ISO 26262) Software Requirements"
-            ]
-        },
-        {
-            "name": "Dextra Technologies",
-            "position": "Embedded Software Developer",
-            "startDate": "2015-12-01",
-            "endDate": "2018-04-01",
-            "location": {
-                "city": "Guadalajara",
-                "countryCode": "MX"
-            },
-            "summary": [
-                "Programming in C/C++ for STM32 ARM microcontrollers HAL and middleware components",
-                "Integrated GPS, BLE, and cellular modems under FreeRTOS with strict real-time deadlines.",
-                "Implemented POC and HAL for cellular, GPS and BLE modems (u-blox, Nordic)",
-                "Implemented OTA Firmware update",
-                "Software integrator role (git)"
-            ]
-        },
-        {
-            "name": "Dextra Technologies",
-            "position": "Senior Embedded Tester",
-            "startDate": "2014-06-30",
-            "endDate": "2015-11-30",
-            "location": {
-                "city": "Guadalajara",
-                "countryCode": "MX"
-            },
-            "summary": [
-                "Programming in Python and Go for QA Automation of Automotive devices",
-                "Validated GPS functionality, vehicle protocols (CAN, J1939, J1850, KWP2000, ISO-9141), and BLE"
-            ]
-        },
-        {
-            "name": "Continental Automotive",
-            "position": "System Testing Trainee",
-            "startDate": "2011-05-31",
-            "endDate": "2014-02-28",
-            "location": {
-                "city": "Guadalajara",
-                "countryCode": "MX"
-            },
-            "summary": [
-                "Programming in Python for QA automation of ADAS ECUs (ACU and SBR)",
-                "Implemented test equipment instrumentation using LabVIEW, and TestExec"
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "Universidad de Guadalajara",
-            "degree": "Bachelor of Science-  Electronics and Communications Engineering (BS ECE)",
-            "startDate": "2010-12-31",
-            "endDate": "2017-12-31",
-            "score": "",
-            "courses": [],
-            "location": {
-                "city": "Guadalajara",
-                "countryCode": "MX"
-            }
-        },
-        {
-            "institution": "Centro de Enseñanza Técnica Industrial",
-            "degree": "Technologist in Electronics and Communications",
-            "startDate": "2005-12-31",
-            "endDate": "2009-12-31",
-            "score": "",
-            "courses": [],
-            "location": {
-                "city": "Guadalajara",
-                "countryCode": "MX"
-            }
-        }
-    ],
-    "skills": {
-        "Project Management": [
-            "CMMI, ASPICE, MS Project, Jira, Confluence, Rally, TeamForge, Tableau",
-            "Project life-cycle, V-Model, Leadership, Scrum (Scrum Master, Product Owner)",
-            "Cost Control, Time management, Effective communication, Risk assessment"
-        ],
-        "Programming": [
-            "C/C++, Python, Ruby, Go, Bash and Batch",
-            "Python libraries: OpenCV and TensorFlow",
-            "Git, Bitbucket, GitHub",
-            "ARM (Cortex-M, NXP S32G) and x86-64 architectures"
-        ],
-        "OS / RTOS": [
-            "Windows, Linux, Yocto, FreeRTOS"
-        ],
-        "Communication protocols": [
-            "MQTT, CAN, UDS, J1939, ISO-15765, RP1210B",
-            "UART, SPI, I2C, BLE, USB HID, HTTP"
-        ],
-        "Web and Cloud skills": [
-            "AWS: S3, EC2, IoT, Greengrass, Kinesis",
-            "Containers: Docker, and Kubernetes (K3S)",
-            "DB: SQL, and MongoDB",
-            "Other: REST API, JSON, XML, HTML + CSS, Bootstrap"
-        ],
-        "Tools and Testing": [
-            "Jenkins CI/CD (Groovy pipelines)",
-            "System debugging (ICP, JTAG, OpenOCD)",
-            "Vector CANoe, LabVIEW, TestExec",
-            "Code quality: MISRA-C, static code analysis (PyLint, Klockwork)"
-        ]
-    },
-    "artifacts": {
-        "pdf": "https://github.com/argandas/argandas.github.io/releases/latest/download/resume.pdf"
+    "phone": "+52 1 332-343-6739",
+    "summary": "Engineering leader with 14+ years across connected vehicles, embedded systems, IoT, cloud platforms, and software delivery. Lead multidisciplinary engineering organizations and own hiring, people development, technical architecture, delivery roadmaps, and execution. Experienced bridging firmware and embedded systems with cloud and application platforms; accountable for architecture across edge-to-cloud telemetry, Android Automotive validation, and OTA and release-management initiatives. Hands-on background in C/C++, Python, Go, JavaScript, Linux, AWS IoT, FleetWise, Greengrass, CI/CD, telemetry, OTA workflows, and distributed edge-to-cloud systems. Improve engineering outcomes through AI-assisted automation and scalable delivery workflows.",
+    "profiles": {
+      "email": {
+        "url": "mailto:hugo.arganda@gmail.com",
+        "class": "fa-regular fa-envelope"
+      },
+      "linkedin": {
+        "url": "https://www.linkedin.com/in/argandas",
+        "class": "fab fa-linkedin-in"
+      },
+      "whatsapp": {
+        "url": "https://wa.me/5213323436739",
+        "class": "fa-brands fa-whatsapp"
+      },
+      "github": {
+        "url": "https://github.com/argandas",
+        "class": "fab fa-github"
+      },
+      "twitter": {
+        "url": "https://twitter.com/argandas",
+        "class": "fab fa-twitter"
+      }
     }
+  },
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "C2 Proficient (EFSET 78/100)"
+    }
+  ],
+  "work": [
+    {
+      "position": "Technical Program Manager",
+      "name": "Luxoft",
+      "location": {
+        "city": "Guadalajara",
+        "countryCode": "MX"
+      },
+      "startDate": "2023-02-01",
+      "endDate": "Present",
+      "summary": [
+        "Lead cross-functional engineering delivery for Android Automotive validation platforms, bridging embedded/firmware, software, infrastructure, and product stakeholders",
+        "Architected AI-assisted test automation workflows that reduced test case development time by 35% while improving coverage and reducing manual effort",
+        "Architected Android Automotive system test automation using Python and Ruby across distributed hardware test infrastructure",
+        "Established Jenkins CI/CD pipelines for end-to-end validation and load balancing across hardware-constrained remote test benches",
+        "Integrated Python ML pipelines using librosa and TensorFlow for automated audio recognition and built OpenCV computer-vision checks for image validation",
+        "Reduced automation validation turnaround from 2 days to 4 hours, approximately 75% faster",
+        "Increased test-result reliability from 70% to 90% by stabilizing the automation platform and engineering workflows",
+        "Directed multi-country engineering teams across the US and Mexico, owning delivery planning, technical risk, dependencies, and stakeholder alignment",
+        "Directly manage 3 managers and a 10-person SDET team; own hiring, performance reviews, compensation and promotion recommendations, corrective action, career development, and headcount and budget planning",
+        "Recruited and onboarded 30+ engineers in 6 months, reducing onboarding time from approximately 3 months to 3 weeks through structured onboarding and delivery playbooks",
+        "Oversaw financial operations for 30+ engineers, including budget planning, capacity planning, timesheets, and invoicing"
+      ]
+    },
+    {
+      "position": "Technical Program Manager",
+      "name": "Luxoft",
+      "location": {
+        "city": "Guadalajara",
+        "countryCode": "MX"
+      },
+      "startDate": "2022-05-01",
+      "endDate": "2023-02-01",
+      "summary": [
+        "Engineered edge-to-cloud software in C++ and Python for Linux-based connected-vehicle platforms",
+        "Designed and integrated vehicle telemetry and control architecture across embedded edge devices and AWS cloud services",
+        "Managed Linux embedded development on an NXP S32G vehicle network processor platform",
+        "Integrated Wi-Fi and LTE connectivity on Linux using Quectel modules for connected-vehicle communication",
+        "Delivered vehicle-network communication components using CAN and SocketCAN",
+        "Provisioned AWS cloud infrastructure with CloudFormation Infrastructure as Code for edge-to-cloud integration",
+        "Connected vehicle telemetry and control workflows using AWS IoT Core, Greengrass, and FleetWise",
+        "Worked across firmware, embedded Linux, cloud infrastructure, and vehicle-network layers to deliver an end-to-end connected-platform proof of concept"
+      ]
+    },
+    {
+      "position": "Software Project Manager",
+      "name": "Luxoft",
+      "location": {
+        "city": "Guadalajara",
+        "countryCode": "MX"
+      },
+      "startDate": "2021-06-01",
+      "endDate": "2022-05-01",
+      "summary": [
+        "Managed delivery for a distributed ADAS platform spanning UDS ECU and SoC compute domains",
+        "Drove cross-functional execution across requirements, software, systems, and program-management tracks",
+        "Partnered directly with OEM, Tier 1, and Tier 2 engineering stakeholders to align technical priorities and delivery commitments",
+        "Coordinated a team of 4 project managers across requirements, software, and systems workstreams",
+        "Led execution across engineering teams in Egypt, India, USA, and Mexico while managing risks, dependencies, and delivery milestones",
+        "Ensured V-cycle software process compliance across ASPICE SWE and MAN domains"
+      ]
+    },
+    {
+      "position": "Technical Project Manager",
+      "name": "Luxoft",
+      "location": {
+        "city": "Guadalajara",
+        "countryCode": "MX"
+      },
+      "startDate": "2020-01-31",
+      "endDate": "2021-06-01",
+      "summary": [
+        "Led software development in C++ and JavaScript for heavy-duty ECU reflashing and vehicle service tools",
+        "Delivered ECU flashing workflows across CAN, J1939, J1850, KWP2000, and ISO-9141 protocols",
+        "Built Windows C++ DLLs integrating third-party vehicle hardware adapters",
+        "Conducted technical interviews for C, C++, and Python engineering roles"
+      ]
+    },
+    {
+      "position": "Project Manager",
+      "name": "Luxoft",
+      "location": {
+        "city": "Guadalajara",
+        "countryCode": "MX"
+      },
+      "startDate": "2018-07-31",
+      "endDate": "2020-01-31",
+      "summary": [
+        "Led software delivery for an automotive ADAS Parking Assistant Module over an 18-month program",
+        "Directed two engineering teams with a peak headcount of 14 engineers",
+        "Collaborated across OEM, Tier 1, and Tier 2 engineering organizations to resolve technical and delivery dependencies",
+        "Reduced defect backlog across two teams and addressed ASPICE Level 1 technical debt"
+      ]
+    },
+    {
+      "name": "Luxoft",
+      "position": "Senior Software Developer",
+      "startDate": "2018-04-30",
+      "endDate": "2018-07-31",
+      "location": {
+        "city": "Guadalajara",
+        "countryCode": "MX"
+      },
+      "summary": [
+        "Built embedded C software for two ADAS ECUs and reviewed ISO 26262 functional-safety software requirements",
+        "Supported architecture and integration decisions across embedded software components"
+      ]
+    },
+    {
+      "name": "Dextra Technologies",
+      "position": "Embedded Software Developer",
+      "startDate": "2015-12-01",
+      "endDate": "2018-04-01",
+      "location": {
+        "city": "Guadalajara",
+        "countryCode": "MX"
+      },
+      "summary": [
+        "Engineered C/C++ firmware for 32-bit STM32 ARM microcontrollers, HAL, and middleware components",
+        "Integrated GPS, BLE, and cellular connectivity under FreeRTOS with real-time deadlines",
+        "Delivered HAL and proof-of-concept integrations for modem vendors including u-blox and Nordic",
+        "Implemented OTA firmware update workflows for fleet firmware rollout",
+        "Led Git-based software integration across firmware, HAL, and middleware layers"
+      ]
+    },
+    {
+      "name": "Dextra Technologies",
+      "position": "Senior Embedded Tester",
+      "startDate": "2014-06-30",
+      "endDate": "2015-11-30",
+      "location": {
+        "city": "Guadalajara",
+        "countryCode": "MX"
+      },
+      "summary": [
+        "Built QA automation for connected automotive devices using Python and Go",
+        "Validated GPS, BLE, and five vehicle-network protocols including CAN and J1939",
+        "Worked with telemetry and connectivity validation across embedded device interfaces"
+      ]
+    },
+    {
+      "name": "Continental Automotive",
+      "position": "System Testing Trainee",
+      "startDate": "2011-05-31",
+      "endDate": "2014-02-28",
+      "location": {
+        "city": "Guadalajara",
+        "countryCode": "MX"
+      },
+      "summary": [
+        "Automated ADAS ECU system testing in Python across 2 programs (ACU and SBR)",
+        "Set up test instrumentation workflows using 2 validation tools (LabVIEW and TestExec)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad de Guadalajara",
+      "degree": "Bachelor of Science-  Electronics and Communications Engineering (BS ECE)",
+      "startDate": "2010-12-31",
+      "endDate": "2017-12-31",
+      "score": "",
+      "courses": [],
+      "location": {
+        "city": "Guadalajara",
+        "countryCode": "MX"
+      }
+    },
+    {
+      "institution": "Centro de Ensenanza Tecnica Industrial",
+      "degree": "Technologist in Electronics and Communications",
+      "startDate": "2005-12-31",
+      "endDate": "2009-12-31",
+      "score": "",
+      "courses": [],
+      "location": {
+        "city": "Guadalajara",
+        "countryCode": "MX"
+      }
+    }
+  ],
+  "skills": {
+    "Engineering Leadership": [
+      "Multi-level people leadership, technical roadmap planning, hiring, performance management, and onboarding",
+      "Architecture and technical decision making, cross-functional leadership, delivery ownership",
+      "Risk and dependency management, stakeholder alignment, Agile Scrum, technical mentoring"
+    ],
+    "Connected Vehicle and IoT": [
+      "Vehicle telemetry, connected vehicles, fleet platforms, OTA workflows",
+      "AWS IoT Core, Greengrass, FleetWise, edge-to-cloud architecture",
+      "GPS, LTE, Wi-Fi, BLE, CAN, SocketCAN, TCP/IP, HTTP"
+    ],
+    "Cloud and DevOps": [
+      "AWS CloudFormation, S3, EC2, Kinesis, AWS IoT",
+      "Jenkins CI/CD, Docker, Kubernetes (K3s), REST APIs, Linux",
+      "Infrastructure as Code and distributed edge/cloud integration"
+    ],
+    "Programming Languages": [
+      "C, C++, Python, Go, JavaScript, Ruby, Bash, Batch",
+      "Production Go experience in automation and test tooling, REST or gRPC services, and CI/CD or developer tooling"
+    ],
+    "Embedded and Automotive": [
+      "Linux Embedded, Yocto, FreeRTOS, STM32, NXP S32G, ARM Cortex-M, x86-64",
+      "ADAS, ECU flashing, ISO 26262, ASPICE-aligned development"
+    ],
+    "Software and Delivery Tools": [
+      "Git, GitHub, Bitbucket, Jira, Confluence, Rally, TeamForge",
+      "Automated validation, regression testing, CI/CD, technical delivery workflows"
+    ],
+    "AI-Assisted Engineering": [
+      "Led and implemented AI-assisted test automation architecture and workflows",
+      "Generative AI-assisted test automation, prompt design for code generation, and AI-generated code review workflows"
+    ]
+  },
+  "artifacts": {
+    "pdf": "https://github.com/argandas/argandas.github.io/releases/latest/download/resume.pdf"
+  },
+  "_target_role": {
+    "company": "Harbinger",
+    "role": "Engineering Manager — Platform",
+    "location": "Garden Grove, CA",
+    "focus": [
+      "Platform engineering",
+      "Connected vehicle / fleet telemetry",
+      "Edge-to-cloud systems",
+      "Architecture and technical leadership",
+      "Hiring and team growth",
+      "Cross-functional firmware/software leadership"
+    ],
+    "positioning_note": "Do not claim React or production frontend ownership unless supported separately. Position Go/JavaScript, AWS IoT, telemetry, OTA, connected vehicles, and embedded/cloud architecture as the strongest transferable match."
+  }
 }

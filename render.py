@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import argparse
 import jinja2
 import json
 import os
@@ -12,11 +13,11 @@ std_jinja_env = jinja2.Environment(
 )
 
 latex_jinja_env = jinja2.Environment(
-	block_start_string = '\BLOCK{',
+	block_start_string = r'\BLOCK{',
 	block_end_string = '}',
-	variable_start_string = '\VAR{',
+	variable_start_string = r'\VAR{',
 	variable_end_string = '}',
-	comment_start_string = '\#{',
+	comment_start_string = r'\#{',
 	comment_end_string = '}',
 	line_statement_prefix = '%%',
 	line_comment_prefix = '%#',
@@ -91,15 +92,40 @@ def replace_percentage_recursive(data, replacement_char):
 def render_latex(template, dst):
     tmpl = latex_jinja_env.get_template(template)
     with open(dst, "w+") as fh:
-        test_data = replace_percentage_recursive(input_data, "\%")
+        test_data = replace_percentage_recursive(input_data, r"\%")
         fh.write(tmpl.render(data=test_data))
         fh.close()
 
 
+def render_resume_format(fmt):
+    template = f'./templates/resume_{fmt}.tex'
+    if not os.path.exists(template):
+        raise FileNotFoundError(f"Missing template: {template}")
+    render_latex(template, f'./resume_{fmt}.tex')
+
+
 def main():
+    parser = argparse.ArgumentParser(description="Render resume artifacts")
+    parser.add_argument(
+        "--format",
+        choices=["classic", "worded", "both"],
+        default="worded",
+        help="Resume template format to render",
+    )
+    args = parser.parse_args()
+
     load_config('./resume.json')
-    render_file('./template/index.html', './index.html')
-    render_latex('./template/resume.tex', './resume.tex')
+    render_file('./templates/index.html', './index.html')
+
+    if args.format == "both":
+        render_resume_format("classic")
+        render_resume_format("worded")
+        # Keep default compatibility for tools expecting resume.tex.
+        render_latex('./templates/resume_worded.tex', './resume.tex')
+    else:
+        render_resume_format(args.format)
+        # Keep default compatibility for tools expecting resume.tex.
+        render_latex(f'./templates/resume_{args.format}.tex', './resume.tex')
 
 
 if __name__ == "__main__":
